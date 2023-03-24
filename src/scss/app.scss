@@ -191,8 +191,6 @@ header {
       column-gap: 24px;
 
       .header-option {
-        font-weight: 400;
-
         margin-top: 0;
         margin-bottom: 0;
 
@@ -304,7 +302,8 @@ header {
             color: $white;
             text-transform: capitalize;
             font-size: 14px;
-            font-size: 700;
+            line-height: 16.41px;
+            font-weight: 700;
           }
         }
       }
