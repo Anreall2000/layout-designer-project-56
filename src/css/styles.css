@@ -178,7 +178,7 @@ header .header input::placeholder {
   justify-content: center;
 }
 .page-description .content {
-  padding-top: 250px;
+  padding-top: 248px;
   margin-bottom: 200px;
   display: flex;
   flex-direction: column;
