@@ -3,11 +3,6 @@
   font-weight: normal;
   src: url("../fonts/Roboto-Regular.ttf");
 }
-@font-face {
-  font-family: Roboto;
-  font-weight: bold;
-  src: url("../fonts/Roboto-Bold.ttf");
-}
 body {
   font-family: Roboto, sans-serif;
   line-height: 1.5;
@@ -209,8 +204,8 @@ header .header input::placeholder {
 }
 .page-description .content p {
   color: #FFFFFF;
-  margin-top: 31px;
-  margin-bottom: 17px;
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
 .page-description .content form {
   max-width: 570px;
