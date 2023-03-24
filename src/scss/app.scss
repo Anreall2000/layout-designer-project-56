@@ -4,11 +4,11 @@
   src: url("../fonts/Roboto-Regular.ttf");
 }
 
-@font-face {
-  font-family: Roboto;
-  font-weight: bold;
-  src: url("../fonts/Roboto-Bold.ttf");
-}
+// @font-face {
+//   font-family: Roboto;
+//   font-weight: bold;
+//   src: url("../fonts/Roboto-Bold.ttf");
+// }
 
 $dark: #08020d;
 $light-grey: #e0e0e0;
@@ -125,7 +125,7 @@ header {
 
   left: 20px;
   right: 20px;
-  row-gap: 23px;
+  row-gap: 17px;
 
   column-gap: 90px;
 
@@ -251,11 +251,13 @@ header {
     h1 {
       color: $white;
       @include margin-v(0);
+      font-weight: 700;
     }
 
     h2 {
       color: $white;
       @include margin-v(0);
+      font-weight: 700;
     }
 
     p {

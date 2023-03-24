@@ -86,7 +86,7 @@ header {
   top: 25px;
   left: 20px;
   right: 20px;
-  row-gap: 23px;
+  row-gap: 17px;
   column-gap: 90px;
   display: flex;
   flex-wrap: wrap;
@@ -199,11 +199,13 @@ header .header input::placeholder {
   color: #FFFFFF;
   margin-top: 0;
   margin-bottom: 0;
+  font-weight: 700;
 }
 .page-description .content h2 {
   color: #FFFFFF;
   margin-top: 0;
   margin-bottom: 0;
+  font-weight: 700;
 }
 .page-description .content p {
   color: #FFFFFF;
