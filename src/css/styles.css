@@ -11,6 +11,10 @@ body {
   margin: 0;
 }
 
+.c-white {
+  color: #FFFFFF;
+}
+
 h1 {
   font-weight: bold;
   text-transform: uppercase;
@@ -242,7 +246,7 @@ header .header input::placeholder {
   color: #FFFFFF;
   text-transform: capitalize;
   font-size: 14px;
-  line-height: 16.41px;
+  line-height: 16px;
   font-weight: 700;
 }
 .page-description .content form button {

@@ -51,6 +51,10 @@ body {
   margin-right: $val;
 }
 
+.c-white {
+  color: $white
+}
+
 
 h1 {
   @include header;
@@ -302,7 +306,7 @@ header {
             color: $white;
             text-transform: capitalize;
             font-size: 14px;
-            line-height: 16.41px;
+            line-height: 16px;
             font-weight: 700;
           }
         }
