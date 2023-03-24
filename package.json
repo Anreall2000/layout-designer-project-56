@@ -5,7 +5,7 @@
   "main": "",
   "scripts": {
     "lint": "npx htmlhint && npx stylelint \"**/*.css\"",
-    "compile": "npx sass src/scss/app.scss src/css/style.css"
+    "compile": "npx sass src/scss/app.scss src/css/styles.css"
   },
   "repository": {
     "type": "git",
