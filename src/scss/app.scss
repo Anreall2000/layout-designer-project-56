@@ -233,8 +233,8 @@ header {
   justify-content: center;
 
   .content {
-    margin-top: 250px;
-    margin-bottom: 200px;
+    padding-top: 250px;
+    padding-bottom: 200px;
 
     display: flex;
     flex-direction: column;
@@ -264,6 +264,11 @@ header {
       color: $white;
       margin-top: 16px;
       margin-bottom: 16px;
+
+      @media screen and (min-width: 1200px) {
+        margin-top: 31px;
+        margin-bottom: 17px;
+      }
     }
 
     form {
