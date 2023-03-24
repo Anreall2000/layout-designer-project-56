@@ -108,7 +108,7 @@ header .banner .icon {
 }
 header .banner h5 {
   color: #FFFFFF;
-  font-weight: 400;
+  font-weight: 700;
   text-align: center;
   margin-top: 0;
   margin-bottom: 0;
@@ -176,7 +176,7 @@ header .header input::placeholder {
 }
 .page-description .content {
   padding-top: 250px;
-  padding-bottom: 200px;
+  margin-bottom: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -243,6 +243,7 @@ header .header input::placeholder {
   color: #FFFFFF;
   text-transform: capitalize;
   font-size: 14px;
+  font-size: 700;
 }
 .page-description .content form button {
   padding: 20px 30px;
@@ -254,6 +255,8 @@ header .header input::placeholder {
   color: #FFFFFF;
   font-family: Arial, sans-serif;
   text-transform: uppercase;
+  font-size: 13.3px;
+  line-height: 15.29px;
   border: none;
 }
 
