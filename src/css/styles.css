@@ -549,15 +549,6 @@ footer p {
   margin-top: 0;
   margin-bottom: 0;
 }
-footer .m-b-1em {
-  margin-bottom: 1em;
-}
-footer .m-b-2em {
-  margin-bottom: 2em;
-}
-footer .m-t-1em {
-  margin-top: 1em;
-}
 footer .about {
   grid-area: about;
 }
@@ -575,7 +566,7 @@ footer .footer {
   grid-area: footer;
   display: flex;
   column-gap: 16px;
-  margin-top: 1em;
+  margin-top: 48px;
   margin-bottom: 1em;
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -612,7 +603,7 @@ footer hr {
   position: absolute;
   left: -20px;
   right: -20px;
-  top: 0;
+  top: -8px;
 }
 @media screen and (min-width: 1200px) {
   footer hr {

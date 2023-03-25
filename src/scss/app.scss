@@ -670,18 +670,6 @@ footer {
     margin-bottom: 0;
   }
 
-  .m-b-1em {
-    margin-bottom: 1em;
-  }
-
-  .m-b-2em {
-    margin-bottom: 2em;
-  }
-
-  .m-t-1em {
-    margin-top: 1em;
-  }
-
   .about {
     grid-area: about;
   }
@@ -703,7 +691,7 @@ footer {
     grid-area: footer;
     display: flex;
     column-gap: 16px;
-    margin-top: 1em;
+    margin-top: 48px;
     margin-bottom: 1em;
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -743,7 +731,7 @@ footer {
       left: -120px;
       right: -120px;
     }
-    top: 0;
+    top: -8px;
   }
 }
 
