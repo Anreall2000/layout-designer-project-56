@@ -588,6 +588,7 @@ footer .footer p {
 @media screen and (min-width: 1200px) {
   footer .footer {
     flex-direction: row;
+    margin-top: 18px;
   }
   footer .footer p {
     margin-top: 0;
