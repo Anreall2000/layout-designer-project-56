@@ -788,14 +788,16 @@ footer hr {
     height: 250px;
   }
 }
-.page-discography .discography-list .discography-item h3 {
+.page-discography .discography-list .discography-item .discography-info {
   margin-top: 18px;
+}
+.page-discography .discography-list .discography-item .discography-info h3 {
   font-size: 18px;
   line-height: 27px;
   font-weight: bold;
   margin: 0;
 }
-.page-discography .discography-list .discography-item p {
+.page-discography .discography-list .discography-item .discography-info p {
   font-size: 16px;
   line-height: 24px;
   margin: 0;
