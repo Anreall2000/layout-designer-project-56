@@ -767,18 +767,19 @@ footer hr {
 }
 .page-discography .discography-list {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, max-content);
   grid-template-rows: repeat(3, minmax(0, max-content));
   column-gap: 50px;
   row-gap: 25px;
 }
 @media screen and (min-width: 1200px) {
   .page-discography .discography-list {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, max-content);
     grid-template-rows: repeat(2, minmax(0, max-content));
   }
 }
 .page-discography .discography-list .discography-item img {
+  display: block;
   width: 137px;
   height: 137px;
 }
