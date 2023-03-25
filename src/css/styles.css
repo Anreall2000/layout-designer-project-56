@@ -386,6 +386,7 @@ header .header input::placeholder {
   color: #FFFFFF;
   text-align: center;
   margin-bottom: 48px;
+  margin-top: 0;
 }
 .page-news h3 {
   font-weight: normal;
