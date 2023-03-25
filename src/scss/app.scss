@@ -484,6 +484,11 @@ header {
     font-weight: normal;
     color: $white;
     margin-top: 0;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 30px;
+      line-height: 45px;
+    }
   }
 
   .news-footer {

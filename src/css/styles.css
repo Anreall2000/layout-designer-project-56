@@ -393,6 +393,12 @@ header .header input::placeholder {
   color: #FFFFFF;
   margin-top: 0;
 }
+@media screen and (min-width: 1200px) {
+  .page-news h3 {
+    font-size: 30px;
+    line-height: 45px;
+  }
+}
 .page-news .news-footer {
   margin-top: 24px;
 }
