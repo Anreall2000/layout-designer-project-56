@@ -582,13 +582,16 @@ footer .footer {
   line-height: 24px;
   flex-direction: column;
 }
+footer .footer p {
+  margin-top: 16px;
+}
 @media screen and (min-width: 1200px) {
   footer .footer {
     flex-direction: row;
   }
-}
-footer .footer p {
-  margin-top: 16px;
+  footer .footer p {
+    margin-top: 0;
+  }
 }
 footer .socials {
   display: flex;
