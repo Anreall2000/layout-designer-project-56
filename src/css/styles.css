@@ -564,7 +564,7 @@ footer .footer {
   grid-area: footer;
   display: flex;
   column-gap: 16px;
-  padding-top: 5rem;
+  padding-top: 7rem;
   flex-direction: column;
 }
 @media screen and (min-width: 1200px) {
