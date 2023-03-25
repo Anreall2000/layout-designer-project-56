@@ -527,8 +527,6 @@ footer {
   grid-template-areas: "about" "support" "contacts" "subscribe" "footer";
   padding-left: 20px;
   padding-right: 20px;
-  padding-top: 3rem;
-  padding-bottom: 2rem;
 }
 @media screen and (min-width: 1200px) {
   footer {
@@ -538,6 +536,10 @@ footer {
     padding-left: 120px;
     padding-right: 120px;
   }
+}
+footer .rem-3-padding {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 footer h2 {
   font-size: 18px;
@@ -564,7 +566,8 @@ footer .footer {
   grid-area: footer;
   display: flex;
   column-gap: 16px;
-  padding-top: 7rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   flex-direction: column;
 }
 @media screen and (min-width: 1200px) {
