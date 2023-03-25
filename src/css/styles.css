@@ -360,7 +360,7 @@ header .header input::placeholder {
   padding-left: 115px;
   padding-top: 21px;
   padding-bottom: 21px;
-  border: 2px solid #cacaca;
+  border: 1px solid #cacaca;
   box-sizing: border-box;
   height: 66px;
   width: 318.66px;
