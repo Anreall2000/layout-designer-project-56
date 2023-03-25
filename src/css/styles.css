@@ -485,6 +485,7 @@ header .header input::placeholder {
 @media screen and (min-width: 1200px) {
   .page-app .app-content {
     flex-direction: row;
+    margin-right: 150px;
   }
 }
 .page-app .app-body {
