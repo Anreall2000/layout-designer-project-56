@@ -385,6 +385,7 @@ header .header input::placeholder {
 .page-news h2 {
   color: #FFFFFF;
   text-align: center;
+  margin-bottom: 48px;
 }
 .page-news h3 {
   font-weight: normal;
@@ -440,7 +441,7 @@ header .header input::placeholder {
   padding: 16px 30px;
   width: 135px;
   height: 53px;
-  border: 2px solid #cacaca;
+  border: 1px solid #cacaca;
   box-sizing: border-box;
   color: #FFFFFF;
   text-align: center;
