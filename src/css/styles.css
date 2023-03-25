@@ -645,9 +645,13 @@ footer hr {
 .artist-page-description h1 {
   margin-bottom: 16px;
 }
+.artist-page-description p {
+  padding-bottom: 0;
+}
 .artist-page-description .buttons {
   display: flex;
   gap: 1.5rem;
+  padding-top: 48px;
   flex-direction: column;
 }
 @media screen and (min-width: 1200px) {

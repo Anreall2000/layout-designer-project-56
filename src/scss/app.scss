@@ -772,9 +772,14 @@ footer {
     margin-bottom: 16px;
   }
 
+  p {
+    padding-bottom: 0;
+  }
+
   .buttons {
     display: flex;
     gap: 1.5rem;
+    padding-top: 48px;
 
     flex-direction: column;
     @media screen and (min-width: 1200px) {
