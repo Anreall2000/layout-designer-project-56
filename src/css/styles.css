@@ -315,17 +315,14 @@ header .header input::placeholder {
 }
 .page-pricing .pricings .pricing-item.bg-sub-1 {
   background-image: url("../images/subscribe_1.png");
-  background-position: center;
   background-size: cover;
 }
 .page-pricing .pricings .pricing-item.bg-sub-2 {
   background-image: url("../images/subscribe_2.png");
-  background-position: center;
   background-size: cover;
 }
 .page-pricing .pricings .pricing-item.bg-sub-3 {
   background-image: url("../images/subscribe_3.png");
-  background-position: center;
   background-size: cover;
 }
 .page-pricing .pricings .pricing-item h3 {

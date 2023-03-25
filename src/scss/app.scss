@@ -41,6 +41,11 @@ body {
   background-size: cover;
 }
 
+@mixin non-center-image($name) {
+  background-image: url("../images/#{$name}");
+  background-size: cover;
+}
+
 @mixin margin-v($val) {
   margin-top: $val;
   margin-bottom: $val;
@@ -385,15 +390,15 @@ header {
     .pricing-item {
 
       &.bg-sub-1{
-        @include image("subscribe_1.png");
+        @include non-center-image("subscribe_1.png");
       }
 
       &.bg-sub-2{
-        @include image("subscribe_2.png");
+        @include non-center-image("subscribe_2.png");
       }
 
       &.bg-sub-3{
-        @include image("subscribe_3.png");
+        @include non-center-image("subscribe_3.png");
       }
 
       padding-left: 1.5rem;
