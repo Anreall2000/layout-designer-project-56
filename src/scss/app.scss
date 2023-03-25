@@ -439,7 +439,6 @@ header {
 
       a {
         display: block;
-        // padding-left: 115px;
         padding-top: 21px;
         padding-bottom: 21px;
         border: 1px solid $grey;
@@ -465,12 +464,11 @@ header {
   display: flex;
   flex-direction: column;
 
-  margin-left: 20px;
-  margin-right: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 
   @media screen and (min-width: 1200px) {
-    margin-left: 120px;
-    margin-right: 120px;
+    width: 1200px;
   }
 
   padding-top: 100px;
@@ -570,8 +568,7 @@ header {
   padding-right: 20px;
 
   @media screen and (min-width: 1200px) {
-    padding-left: 120px;
-    padding-right: 243px;
+    width: 1200px;
   }
 
   h2 {

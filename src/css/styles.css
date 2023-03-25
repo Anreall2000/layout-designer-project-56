@@ -373,14 +373,13 @@ header .header input::placeholder {
 .page-news {
   display: flex;
   flex-direction: column;
-  margin-left: 20px;
-  margin-right: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
   padding-top: 100px;
 }
 @media screen and (min-width: 1200px) {
   .page-news {
-    margin-left: 120px;
-    margin-right: 120px;
+    width: 1200px;
   }
 }
 .page-news h2 {
@@ -463,8 +462,7 @@ header .header input::placeholder {
 }
 @media screen and (min-width: 1200px) {
   .page-app {
-    padding-left: 120px;
-    padding-right: 243px;
+    width: 1200px;
   }
 }
 .page-app h2 {
