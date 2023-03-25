@@ -527,6 +527,7 @@ footer {
   grid-template-areas: "about" "support" "contacts" "subscribe" "footer";
   padding-left: 20px;
   padding-right: 20px;
+  row-gap: 30px;
 }
 @media screen and (min-width: 1200px) {
   footer {
