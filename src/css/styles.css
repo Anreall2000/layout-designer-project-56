@@ -281,6 +281,7 @@ header .header input::placeholder {
 }
 .page-pricing h2 {
   text-align: center;
+  padding-bottom: 45px;
 }
 .page-pricing p {
   text-align: center;
@@ -288,6 +289,7 @@ header .header input::placeholder {
 .page-pricing .page-pricing-footer {
   color: #FFFFFF;
   margin-top: 40px;
+  margin-bottom: 0;
 }
 .page-pricing .pricings {
   display: flex;
@@ -325,9 +327,20 @@ header .header input::placeholder {
 .page-pricing .pricings .pricing-item h3 {
   text-align: center;
   font-weight: normal;
+  text-transform: capitalize;
 }
 .page-pricing .pricings .pricing-item .pricing-value {
+  display: flex;
+  justify-content: center;
   margin-top: 200px;
+  font-size: 32px;
+  line-height: 48px;
+  color: #FFFFFF;
+  vertical-align: top;
+}
+.page-pricing .pricings .pricing-item .pricing-value .number {
+  font-size: 64px;
+  line-height: 64px;
 }
 .page-pricing .pricings .pricing-item .pricing-footer {
   margin-top: 64px;

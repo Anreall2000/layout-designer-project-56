@@ -353,6 +353,7 @@ header {
 
   h2 {
     text-align: center;
+    padding-bottom: 45px;
   }
 
   p {
@@ -362,7 +363,9 @@ header {
   .page-pricing-footer {
     color: $white;
     margin-top: 40px;
+    margin-bottom: 0;
   }
+
 
   .pricings {
     display: flex;
@@ -398,10 +401,22 @@ header {
       h3 {
         text-align: center;
         font-weight: normal;
+        text-transform: capitalize;
       }
 
       .pricing-value {
+        display: flex;
+        justify-content: center;
         margin-top: 200px;
+        font-size: 32px;
+        line-height: 48px;
+        color: $white;
+        vertical-align: top;
+
+        .number {
+          font-size: 64px;
+          line-height: 64px;
+        }
       }
 
       .pricing-footer {
