@@ -340,105 +340,98 @@ header {
 
 .page-pricing {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
 
-  .content{
+  padding-top: 100px;
+
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  .page-pricing-footer {
+    color: $white;
+    margin-top: 40px;
+  }
+
+  .pricings {
     display: flex;
+    column-gap: 46.8px;
+    row-gap: 54px;
+
     flex-direction: column;
 
-    padding-top: 100px;
-
-    padding-left: 20px;
-    padding-right: 20px;
-
     @media screen and (min-width: 1200px) {
-      width: 1200px;
-      padding-left: 0px;
-      padding-right: 0px;
+      flex-direction: row;
     }
 
-    h2 {
-      text-align: center;
-    }
-
-    p {
-      text-align: center;
-    }
-
-    .page-pricing-footer {
-      color: $white;
-      margin-top: 40px;
-    }
-
-    .pricings {
+    .pricing-item {
       display: flex;
-      column-gap: 46.8px;
-      row-gap: 54px;
-
       flex-direction: column;
 
-      @media screen and (min-width: 1200px) {
-        flex-direction: row;
+      &.bg-sub-1{
+        @include image("subscribe_1.png");
       }
 
-      .pricing-item {
-        display: flex;
-        flex-direction: column;
+      &.bg-sub-2{
+        @include image("subscribe_2.png");
+      }
 
-        &.bg-sub-1{
-          @include image("subscribe_1.png");
-        }
+      &.bg-sub-3{
+        @include image("subscribe_3.png");
+      }
 
-        &.bg-sub-2{
-          @include image("subscribe_2.png");
-        }
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+      border-radius: 1rem;
 
-        &.bg-sub-3{
-          @include image("subscribe_3.png");
-        }
+      h3 {
+        text-align: center;
+        font-weight: normal;
+      }
 
-        padding-left: 1.5rem;
-        padding-right: 1.5rem;
-        border-radius: 1rem;
+      .pricing-value {
+        margin-top: 200px;
+      }
 
-        h3 {
-          text-align: center;
-          font-weight: normal;
-        }
+      .pricing-footer {
+        @include margin-v(64px);
 
-        .pricing-value {
-          margin-top: 200px;
-        }
+        font-size: 12.8px;
+        line-height: 19.2px;
 
-        .pricing-footer {
-          @include margin-v(64px);
+        color: $white;
+      }
 
-          font-size: 12.8px;
-          line-height: 19.2px;
+      a {
+        display: block;
+        padding-left: 20px;
+        padding-top: 21px;
+        padding-bottom: 21px;
+        border: 2px solid $grey;
+        box-sizing: border-box;
+        height: 66px;
 
-          color: $white;
-        }
+        color: $white;
+        text-align: center;
 
-        a {
-          display: block;
-          padding-left: 20px;
-          padding-top: 21px;
-          padding-bottom: 21px;
-          border: 2px solid $grey;
-          box-sizing: border-box;
-          height: 66px;
+        background-color: transparent;
 
-          color: $white;
-          text-align: center;
-
-          background-color: transparent;
-
-          border-radius: 3px;
-          text-transform: uppercase;
-          font-size: 24px;
-          line-height: 24px;
-          text-decoration: none;
-        }
+        border-radius: 3px;
+        text-transform: uppercase;
+        font-size: 24px;
+        line-height: 24px;
+        text-decoration: none;
       }
     }
   }
