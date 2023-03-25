@@ -20,6 +20,7 @@ h1 {
   text-transform: uppercase;
   font-size: 30px;
   line-height: 45px;
+  color: #FFFFFF;
 }
 @media screen and (min-width: 1200px) {
   h1 {
@@ -33,6 +34,7 @@ h2 {
   text-transform: uppercase;
   font-size: 18px;
   line-height: 27px;
+  color: #FFFFFF;
 }
 @media screen and (min-width: 1200px) {
   h2 {
@@ -44,6 +46,7 @@ h2 {
 h3 {
   font-size: 16px;
   line-height: 24px;
+  color: #FFFFFF;
 }
 @media screen and (min-width: 1200px) {
   h3 {
@@ -267,6 +270,7 @@ header .header input::placeholder {
 .page-pricing {
   display: flex;
   flex-direction: column;
+  width: 1200px;
   padding-top: 100px;
   padding-left: 20px;
   padding-right: 20px;
