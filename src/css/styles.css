@@ -789,6 +789,7 @@ footer hr {
   }
 }
 .page-discography .discography-list .discography-item h3 {
+  margin-top: 18px;
   font-size: 18px;
   line-height: 27px;
   font-weight: bold;
