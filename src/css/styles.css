@@ -704,6 +704,9 @@ footer hr {
     width: 1200px;
   }
 }
+.page-popular-track h2 {
+  margin-bottom: 48px;
+}
 .page-popular-track .tracks {
   display: grid;
   grid-template-columns: 1fr;
