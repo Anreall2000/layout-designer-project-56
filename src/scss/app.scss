@@ -591,6 +591,7 @@ header {
     flex-direction: column;
     @media screen and (min-width: 1200px) {
       flex-direction: row;
+      align-items: flex-start;
     }
   }
 
