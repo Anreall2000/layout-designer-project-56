@@ -705,6 +705,7 @@ footer hr {
   }
 }
 .page-popular-track h2 {
+  margin-top: 0;
   margin-bottom: 48px;
 }
 .page-popular-track .tracks {
@@ -757,8 +758,7 @@ footer hr {
 }
 @media screen and (min-width: 1200px) {
   .page-discography {
-    padding-left: 120px;
-    padding-right: 170px;
+    width: 1200px;
   }
 }
 .page-discography .discography-list {
@@ -804,8 +804,7 @@ footer hr {
 }
 @media screen and (min-width: 1200px) {
   .page-similar {
-    padding-left: 120px;
-    padding-right: 170px;
+    width: 1200px;
   }
 }
 .page-similar .similar-list {
