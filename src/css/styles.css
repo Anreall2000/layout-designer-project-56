@@ -586,6 +586,10 @@ footer .footer {
     flex-direction: row;
   }
 }
+footer .footer p {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
 footer .socials {
   display: flex;
   column-gap: 24px;
