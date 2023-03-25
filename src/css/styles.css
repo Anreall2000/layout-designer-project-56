@@ -332,6 +332,7 @@ header .header input::placeholder {
   justify-content: center;
   column-gap: 16px;
   margin-top: 200px;
+  margin-bottom: 40px;
   font-size: 32px;
   line-height: 48px;
   color: #FFFFFF;
