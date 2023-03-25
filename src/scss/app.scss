@@ -961,18 +961,19 @@ footer {
 
   .similar-list {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 137px);
     grid-template-rows: repeat(3, minmax(0, max-content));
     column-gap: 50px;
     row-gap: 25px;
 
     @media screen and (min-width: 1200px) {
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(4, 250px);
       grid-template-rows: repeat(2, minmax(0, max-content));
     }
 
     .similar-item {
       img {
+        display: block;
         width: 137px;
         height: 137px;
 
@@ -982,19 +983,23 @@ footer {
         }
       }
 
-      h3 {
-        font-size: 18px;
-        line-height: 27px;
-        font-weight: bold;
-        margin: 0;
-        text-align: center;
-      }
+      .similar-info {
+        margin-top: 17px;
 
-      p {
-        font-size: 16px;
-        line-height: 24px;
-        margin: 0;
-        text-align: center;
+        h3 {
+          font-size: 18px;
+          line-height: 27px;
+          font-weight: bold;
+          margin: 0;
+          text-align: center;
+        }
+
+        p {
+          font-size: 16px;
+          line-height: 24px;
+          margin: 0;
+          text-align: center;
+        }
       }
     }
   }

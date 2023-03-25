@@ -820,18 +820,19 @@ footer hr {
 }
 .page-similar .similar-list {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 137px);
   grid-template-rows: repeat(3, minmax(0, max-content));
   column-gap: 50px;
   row-gap: 25px;
 }
 @media screen and (min-width: 1200px) {
   .page-similar .similar-list {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 250px);
     grid-template-rows: repeat(2, minmax(0, max-content));
   }
 }
 .page-similar .similar-list .similar-item img {
+  display: block;
   width: 137px;
   height: 137px;
 }
@@ -841,14 +842,17 @@ footer hr {
     height: 250px;
   }
 }
-.page-similar .similar-list .similar-item h3 {
+.page-similar .similar-list .similar-item .similar-info {
+  margin-top: 17px;
+}
+.page-similar .similar-list .similar-item .similar-info h3 {
   font-size: 18px;
   line-height: 27px;
   font-weight: bold;
   margin: 0;
   text-align: center;
 }
-.page-similar .similar-list .similar-item p {
+.page-similar .similar-list .similar-item .similar-info p {
   font-size: 16px;
   line-height: 24px;
   margin: 0;
