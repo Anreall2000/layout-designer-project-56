@@ -340,6 +340,7 @@ header {
 
 main {
   display: flex;
+  justify-content: space-around;
 }
 
 .page-pricing {
@@ -352,8 +353,9 @@ main {
   padding-right: 20px;
 
   @media screen and (min-width: 1200px) {
-    padding-left: 50px;
-    padding-right: 50px;
+    width: 1200px;
+    padding-left: 0px;
+    padding-right: 0px;
   }
 
   h2 {
