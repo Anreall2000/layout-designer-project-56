@@ -646,7 +646,7 @@ footer hr {
   margin-bottom: 16px;
 }
 .artist-page-description p {
-  padding-bottom: 0;
+  margin-bottom: 0;
 }
 .artist-page-description .buttons {
   display: flex;
