@@ -1,6 +1,6 @@
 @font-face {
-  font-family: Roboto;
   font-weight: normal;
+  font-family: Roboto;
   src: url("../fonts/Roboto-Regular.ttf");
 }
 
@@ -18,16 +18,15 @@ $green: #34c176;
 $orange: #f89202;
 $purple: #5328a1;
 $brown: #95390c;
-
-$white: #FFFFFF;
+$white: #fff;
 
 body {
-  font-family: Roboto, sans-serif;
-  line-height: 1.5;
-  color: $grey;
-  background: $dark;
 
   margin: 0;
+  color: $grey;
+  font-family: Roboto, sans-serif;
+  line-height: 1.5;
+  background: $dark;
 }
 
 @mixin header {
@@ -52,37 +51,35 @@ body {
 }
 
 @mixin margin-h($val) {
-  margin-left: $val;
   margin-right: $val;
+  margin-left: $val;
 }
 
 .c-white {
-  color: $white
+  color: $white;
 }
-
 
 h1 {
   @include header;
 
+  color: $white;
+
   font-size: 30px;
   line-height: 45px;
-
-  color: $white;
 
   @media screen and (min-width: 1200px) {
     font-size: 60px;
     line-height: 90px;
   }
-
 }
 
 h2 {
   @include header;
 
+  color: $white;
+
   font-size: 18px;
   line-height: 27px;
-
-  color: $white;
 
   @media screen and (min-width: 1200px) {
     font-size: 38px;
@@ -91,10 +88,10 @@ h2 {
 }
 
 h3 {
-  font-size: 16px;
-  line-height: 24px;
 
   color: $white;
+  font-size: 16px;
+  line-height: 24px;
 
   @media screen and (min-width: 1200px) {
     font-size: 24px;
@@ -119,7 +116,6 @@ h5 {
   line-height: 1.5;
 }
 
-
 label {
   position: absolute;
 
@@ -137,20 +133,20 @@ label {
 header {
   position: absolute;
   top: 25px;
+  right: 20px;
 
   left: 20px;
-  right: 20px;
-  row-gap: 17px;
-
-  column-gap: 90px;
 
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 
+  column-gap: 90px;
+  row-gap: 17px;
+
   @media screen and (min-width: 1200px) {
-    left: 120px;
     right: 120px;
+    left: 120px;
   }
 
   .banner {
@@ -167,43 +163,44 @@ header {
     }
 
     h5 {
-      color: $white;
-      font-weight: 700;
-      text-align: center;
 
       margin-top: 0;
       margin-bottom: 0;
+      color: $white;
+      font-weight: 700;
+      text-align: center;
     }
   }
 
   .header {
     display: flex;
-    flex-wrap: wrap;
 
     flex-grow: 1;
     flex-shrink: 1;
-    row-gap: 18px;
-
-    justify-content: space-between;
 
     flex-direction: column;
+    flex-wrap: wrap;
+
+    justify-content: space-between;
+    row-gap: 18px;
+
     @media screen and (min-width: 1200px) {
       flex-direction: row;
     }
 
-
     .header-options {
       display: flex;
+
+      flex-direction: column;
       flex-wrap: wrap;
       align-items: flex-start;
 
-      flex-direction: column;
+      column-gap: 24px;
+
       @media screen and (min-width: 1200px) {
         flex-direction: row;
         align-items: center;
       }
-
-      column-gap: 24px;
 
       .header-option {
         margin-top: 0;
@@ -214,26 +211,27 @@ header {
     }
 
     input {
-      background-color: $dark-grey;
-      border-radius: 50px;
-
-      border: none;
-      padding: 5px 10px;
       box-sizing: border-box;
 
       width: 100%;
+      padding: 5px 10px;
+      background-color: $dark-grey;
+
+      border: none;
+      border-radius: 50px;
+
       @media screen and (min-width: 1200px) {
         width: 248px;
       }
 
       &::placeholder {
         color: #757575;
-        text-transform: uppercase;
-
-        font-family: Arial, sans-serif;
 
         font-size: 13.3px;
+
+        font-family: Arial, sans-serif;
         line-height: 15.29px;
+        text-transform: uppercase;
       }
     }
   }
@@ -246,37 +244,40 @@ header {
   justify-content: center;
 
   .content {
-    padding-top: 248px;
-    margin-bottom: 200px;
 
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
+    margin-bottom: 200px;
+    padding-top: 248px;
+    padding-right: 20px;
 
     padding-left: 20px;
-    padding-right: 20px;
+    text-align: center;
+
     @media screen and (min-width: 1200px) {
-      padding: 0;
       margin-top: 200px;
+      padding: 0;
     }
 
     h1 {
       color: $white;
-      @include margin-v(0);
       font-weight: 700;
+
+      @include margin-v(0);
     }
 
     h2 {
       color: $white;
-      @include margin-v(0);
       font-weight: 700;
+
+      @include margin-v(0);
     }
 
     p {
-      color: $white;
       margin-top: 16px;
       margin-bottom: 16px;
+      color: $white;
 
       @media screen and (min-width: 1200px) {
         margin-top: 31px;
@@ -293,51 +294,51 @@ header {
         column-gap: 24px;
 
         input {
+          box-sizing: border-box;
+          width: 100%;
           min-width: 270px;
           min-height: 50px;
-          width: 100%;
-
-          @media screen and (min-width: 1200px) {
-            width: auto;
-          }
+          margin-bottom: 1.5rem;
 
           padding-left: 20px;
-          margin-bottom: 1.5rem;
-          border: 2px solid $grey;
-          box-sizing: border-box;
 
           color: $white;
           font-size: 14px;
 
           background-color: transparent;
+          border: 2px solid $grey;
 
           border-radius: 3px;
 
+          @media screen and (min-width: 1200px) {
+            width: auto;
+          }
+
           &::placeholder {
             color: $white;
-            text-transform: capitalize;
+            font-weight: 700;
             font-size: 14px;
             line-height: 16px;
-            font-weight: 700;
+            text-transform: capitalize;
           }
         }
       }
+
       button {
-        padding: 20px 30px;
-        border-radius: 5px;
-        background-color: $green;
         width: 100%;
         height: 57px;
-
-        text-align: center;
+        padding: 20px 30px;
         color: $white;
-        font-family: Arial, sans-serif;
-        text-transform: uppercase;
         font-size: 13.3px;
+        font-family: Arial, sans-serif;
         line-height: 15.29px;
 
-        border: none;
+        text-align: center;
+        text-transform: uppercase;
+        background-color: $green;
 
+        border: none;
+        border-radius: 5px;
       }
     }
   }
@@ -348,21 +349,22 @@ header {
   flex-direction: column;
 
   padding-top: 100px;
+  padding-right: 20px;
 
   padding-left: 20px;
-  padding-right: 20px;
 
   @media screen and (min-width: 1200px) {
     width: 1200px;
   }
 
   h2 {
-    text-align: center;
+    margin-top: 0;
     margin-bottom: 47px;
+    text-align: center;
+
     @media screen and (min-width: 1200px) {
       margin-bottom: 45px;
     }
-    margin-top: 0;
   }
 
   p {
@@ -370,18 +372,17 @@ header {
   }
 
   .page-pricing-footer {
-    color: $white;
     margin-top: 40px;
     margin-bottom: 0;
+    color: $white;
   }
-
 
   .pricings {
     display: flex;
-    column-gap: 47px;
-    row-gap: 50px;
 
     flex-direction: column;
+    column-gap: 47px;
+    row-gap: 50px;
 
     @media screen and (min-width: 1200px) {
       flex-direction: row;
@@ -389,38 +390,39 @@ header {
 
     .pricing-item {
       flex: 1 1 0px;
-      &.bg-sub-1{
+      padding-right: 1.5rem;
+
+      padding-left: 1.5rem;
+      border-radius: 1rem;
+
+      &.bg-sub-1 {
         @include non-center-image("subscribe_1.png");
       }
 
-      &.bg-sub-2{
+      &.bg-sub-2 {
         @include non-center-image("subscribe_2.png");
       }
 
-      &.bg-sub-3{
+      &.bg-sub-3 {
         @include non-center-image("subscribe_3.png");
       }
 
-      padding-left: 1.5rem;
-      padding-right: 1.5rem;
-      border-radius: 1rem;
-
       h3 {
-        text-align: center;
         font-weight: normal;
+        text-align: center;
         text-transform: uppercase;
       }
 
       .pricing-value {
         display: flex;
         justify-content: center;
-        column-gap: 16px;
         margin-top: 200px;
         margin-bottom: 40px;
+        color: $white;
         font-size: 32px;
         line-height: 48px;
-        color: $white;
         vertical-align: top;
+        column-gap: 16px;
 
         .number {
           font-size: 64px;
@@ -431,30 +433,30 @@ header {
       .pricing-footer {
         @include margin-v(64px);
 
+        color: $white;
+
         font-size: 12.8px;
         line-height: 19.2px;
-
-        color: $white;
       }
 
       a {
         display: block;
-        padding-top: 21px;
-        padding-bottom: 21px;
-        border: 1px solid $grey;
         box-sizing: border-box;
         height: 66px;
-        text-align: center;
+        padding-top: 21px;
+        padding-bottom: 21px;
 
         color: $white;
-
-        background-color: transparent;
-
-        border-radius: 5px;
-        text-transform: uppercase;
         font-size: 16px;
         line-height: 24px;
+        text-align: center;
+        text-transform: uppercase;
         text-decoration: none;
+
+        background-color: transparent;
+        border: 1px solid $grey;
+
+        border-radius: 5px;
       }
     }
   }
@@ -464,26 +466,26 @@ header {
   display: flex;
   flex-direction: column;
 
-  padding-left: 20px;
+  padding-top: 100px;
   padding-right: 20px;
+
+  padding-left: 20px;
 
   @media screen and (min-width: 1200px) {
     width: 1200px;
   }
 
-  padding-top: 100px;
-
   h2 {
+    margin-top: 0;
+    margin-bottom: 48px;
     color: $white;
     text-align: center;
-    margin-bottom: 48px;
-    margin-top: 0;
   }
 
   h3 {
-    font-weight: normal;
-    color: $white;
     margin-top: 0;
+    color: $white;
+    font-weight: normal;
 
     @media screen and (min-width: 1200px) {
       font-size: 30px;
@@ -505,13 +507,14 @@ header {
   .news-item {
     display: flex;
 
+    flex-direction: column;
+
     column-gap: 50px;
     row-gap: 50px;
 
-    flex-direction: column;
-
     @media screen and (min-width: 1200px) {
       flex-direction: row;
+
       &.ordinary {
         flex-direction: row-reverse;
       }
@@ -520,20 +523,20 @@ header {
 
   .news-author {
     display: flex;
-    column-gap: 16px;
 
     margin-bottom: 48px;
+    column-gap: 16px;
 
     h5 {
       margin: 0;
-      font-size: 12px;
-      font-weight: normal;
       color: $orange;
+      font-weight: normal;
+      font-size: 12px;
     }
 
     p {
       margin: 0;
-      font-size: 12px
+      font-size: 12px;
     }
 
     .icon {
@@ -545,21 +548,21 @@ header {
 
   a {
     display: block;
-    padding: 16px 30px;
+    box-sizing: border-box;
     width: 135px;
     height: 53px;
-    border: 1px solid $grey;
-    box-sizing: border-box;
+    padding: 16px 30px;
 
     color: $white;
+    font-size: 12px;
     text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
 
     background-color: transparent;
+    border: 1px solid $grey;
 
     border-radius: 3px;
-    text-transform: uppercase;
-    font-size: 12px;
-    text-decoration: none;
   }
 }
 
@@ -568,27 +571,28 @@ header {
   flex-direction: column;
 
   padding-top: 100px;
+  padding-right: 20px;
 
   padding-left: 20px;
-  padding-right: 20px;
 
   @media screen and (min-width: 1200px) {
     width: 1200px;
   }
 
   h2 {
-    margin-bottom: 48px;
     margin-top: 0;
+    margin-bottom: 48px;
     color: $white;
     text-align: center;
   }
 
   .app-content {
     display: flex;
-    column-gap: 144px;
-    align-items: center;
 
     flex-direction: column;
+    align-items: center;
+    column-gap: 144px;
+
     @media screen and (min-width: 1200px) {
       flex-direction: row;
       align-items: flex-start;
@@ -601,9 +605,10 @@ header {
   }
 
   .app-body {
-    row-gap: 16px;
 
     order: 1;
+    row-gap: 16px;
+
     @media screen and (min-width: 1200px) {
       order: 0;
       max-width: 600px;
@@ -615,13 +620,13 @@ header {
 
     a {
       display: inline-block;
-      border-radius: 32px;
-      font-size: 12.8px;
       padding: 16px 40px;
-      text-decoration: none;
-      background: $brown;
 
       color: $white;
+      font-size: 12.8px;
+      text-decoration: none;
+      background: $brown;
+      border-radius: 32px;
     }
   }
 }
@@ -632,29 +637,29 @@ header {
 
 footer {
   display: grid;
+  grid-template-areas:
+    "about"
+    "support"
+    "contacts"
+    "subscribe"
+    "footer";
 
   grid-template-columns: 1fr;
   grid-template-rows: repeat(5, max-content);
-  grid-template-areas:
-              "about"
-              "support"
-              "contacts"
-              "subscribe"
-              "footer";
+  padding-right: 20px;
 
   padding-left: 20px;
-  padding-right: 20px;
 
   row-gap: calc(30px - 0.83em);
 
   @media screen and (min-width: 1200px) {
+    grid-template-areas:
+      "about support contacts subscribe"
+      "footer footer footer footer";
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, max-content);
-    grid-template-areas:
-              "about support contacts subscribe"
-              "footer footer footer footer";
-    padding-left: 120px;
     padding-right: 120px;
+    padding-left: 120px;
   }
 
   .rem-3-padding {
@@ -700,21 +705,22 @@ footer {
 
   .footer {
     position: relative;
-    grid-area: footer;
     display: flex;
-    column-gap: 16px;
+
+    flex-direction: column;
+    grid-area: footer;
     margin-top: 34px;
     margin-bottom: 1em;
     padding-top: 2rem;
     padding-bottom: 2rem;
 
     line-height: 24px;
-
-    flex-direction: column;
+    column-gap: 16px;
 
     p {
       margin-top: 16px;
     }
+
     @media screen and (min-width: 1200px) {
       flex-direction: row;
 
@@ -732,37 +738,41 @@ footer {
 
     .gmail {
       display: block;
-      @include image("Google+.png");
       width: 26px;
       height: 17px;
+
+      @include image("Google+.png");
     }
 
     .twitter {
       display: block;
-      @include image("Twitter.png");
       width: 22px;
       height: 19px;
+
+      @include image("Twitter.png");
     }
   }
+
   hr {
-    margin: 0;
     position: absolute;
-    left: -20px;
-    right: -20px;
-    @media screen and (min-width: 1200px) {
-      left: -120px;
-      right: -120px;
-    }
     top: -8px;
+    right: -20px;
+    left: -20px;
+    margin: 0;
+
+    @media screen and (min-width: 1200px) {
+      right: -120px;
+      left: -120px;
+    }
   }
 }
 
 .artist-page-description {
   @include image("Morten Harket.png");
+  margin: 0;
   padding-top: 200px;
   padding-bottom: 223px;
   padding-left: 20px;
-  margin: 0;
 
   @media screen and (min-width: 1200px) {
     padding-left: 120px;
@@ -778,24 +788,25 @@ footer {
 
   .buttons {
     display: flex;
+
+    flex-direction: column;
     gap: 1.5rem;
     padding-top: 48px;
 
-    flex-direction: column;
     @media screen and (min-width: 1200px) {
       flex-direction: row;
     }
 
     a {
       display: flex;
+      box-sizing: border-box;
+      width: 200px;
 
       padding: 20px 30px;
-      width: 200px;
-      box-sizing: border-box;
       color: $white;
-      border-radius: 5px;
       text-decoration: none;
       column-gap: 16px;
+      border-radius: 5px;
 
       p {
         margin: 0;
@@ -814,6 +825,7 @@ footer {
 
       &.favorite {
         background: $brown;
+
         .heart-logo {
           @include image("heart.svg");
           width: 20px;
@@ -826,8 +838,8 @@ footer {
 
 .page-popular-track {
   padding-top: 100px;
-  padding-left: 20px;
   padding-right: 20px;
+  padding-left: 20px;
 
   @media screen and (min-width: 1200px) {
     width: 1200px;
@@ -855,8 +867,8 @@ footer {
       column-gap: 15px;
 
       .track-info {
-        flex-grow: 1;
         display: flex;
+        flex-grow: 1;
         flex-direction: column;
         justify-content: center;
       }
@@ -867,16 +879,16 @@ footer {
       }
 
       h3 {
+        margin: 0;
+        font-weight: bold;
         font-size: 12.8px;
         line-height: 19.2px;
-        font-weight: bold;
-        margin: 0;
       }
 
       p {
+        margin: 0;
         font-size: 12.8px;
         line-height: 19.2px;
-        margin: 0;
       }
 
       .track-meta {
@@ -889,8 +901,8 @@ footer {
 
 .page-discography {
   padding-top: 100px;
-  padding-left: 20px;
   padding-right: 20px;
+  padding-left: 20px;
 
   @media screen and (min-width: 1200px) {
     width: 1200px;
@@ -929,16 +941,16 @@ footer {
         margin-top: 18px;
 
         h3 {
+          margin: 0;
+          font-weight: bold;
           font-size: 18px;
           line-height: 27px;
-          font-weight: bold;
-          margin: 0;
         }
 
         p {
+          margin: 0;
           font-size: 16px;
           line-height: 24px;
-          margin: 0;
         }
       }
     }
@@ -947,8 +959,8 @@ footer {
 
 .page-similar {
   padding-top: 100px;
-  padding-left: 20px;
   padding-right: 20px;
+  padding-left: 20px;
 
   @media screen and (min-width: 1200px) {
     width: 1200px;
@@ -987,17 +999,17 @@ footer {
         margin-top: 17px;
 
         h3 {
+          margin: 0;
+          font-weight: bold;
           font-size: 18px;
           line-height: 27px;
-          font-weight: bold;
-          margin: 0;
           text-align: center;
         }
 
         p {
+          margin: 0;
           font-size: 16px;
           line-height: 24px;
-          margin: 0;
           text-align: center;
         }
       }

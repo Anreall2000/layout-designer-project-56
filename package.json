@@ -4,7 +4,7 @@
   "description": "second frontend hexlet task",
   "main": "",
   "scripts": {
-    "lint": "npx htmlhint && npx stylelint \"**/*.css\"",
+    "lint": "npx htmlhint && npx stylelint \"**/*.scss\"",
     "compile": "npx sass src/scss/app.scss src/css/styles.css"
   },
   "repository": {
