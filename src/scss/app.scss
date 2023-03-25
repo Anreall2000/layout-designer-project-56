@@ -178,8 +178,7 @@ header {
     flex-grow: 1;
     flex-shrink: 1;
 
-    flex-direction: column;
-    flex-wrap: wrap;
+    flex-flow: column wrap;
 
     justify-content: space-between;
     row-gap: 18px;
@@ -191,8 +190,7 @@ header {
     .header-options {
       display: flex;
 
-      flex-direction: column;
-      flex-wrap: wrap;
+      flex-flow: column wrap;
       align-items: flex-start;
 
       column-gap: 24px;
@@ -237,109 +235,130 @@ header {
   }
 }
 
-.page-description {
-  @include image("banner.png");
+footer {
+  display: grid;
 
-  display: flex;
-  justify-content: center;
+  grid-template:
+    "about" max-content / 1fr
+    "support" max-content / 1fr
+    "contacts" max-content / 1fr
+    "subscribe" max-content / 1fr
+    "footer" max-content / 1fr;
+  padding-right: 20px;
 
-  .content {
+  padding-left: 20px;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 200px;
-    padding-top: 248px;
-    padding-right: 20px;
+  row-gap: calc(30px - 0.83em);
 
-    padding-left: 20px;
-    text-align: center;
+  @media screen and (min-width: 1200px) {
+    grid-template:
+      "about support contacts subscribe" max-content / 1fr
+      "footer footer footer footer" max-content / 1fr;
+    padding-right: 120px;
+    padding-left: 120px;
+  }
 
+  .rem-3-padding {
     @media screen and (min-width: 1200px) {
-      margin-top: 200px;
-      padding: 0;
+      padding-top: 3rem;
+      padding-bottom: 3rem;
     }
+  }
 
-    h1 {
-      color: $white;
-      font-weight: 700;
+  .rem-3-p-t {
+    padding-top: 3rem;
+  }
 
-      @include margin-v(0);
-    }
+  .rem-3-p-b {
+    padding-bottom: 3rem;
+  }
 
-    h2 {
-      color: $white;
-      font-weight: 700;
+  h2 {
+    font-size: 18px;
+    line-height: 27px;
+  }
 
-      @include margin-v(0);
-    }
+  p {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .about {
+    grid-area: about;
+  }
+
+  .support {
+    grid-area: support;
+  }
+
+  .contacts {
+    grid-area: contacts;
+  }
+
+  .subscribe {
+    grid-area: subscribe;
+  }
+
+  .footer {
+    position: relative;
+    display: flex;
+
+    flex-direction: column;
+    grid-area: footer;
+    margin-top: 34px;
+    margin-bottom: 1em;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    line-height: 24px;
+    column-gap: 16px;
 
     p {
       margin-top: 16px;
-      margin-bottom: 16px;
-      color: $white;
-
-      @media screen and (min-width: 1200px) {
-        margin-top: 31px;
-        margin-bottom: 17px;
-      }
     }
 
-    form {
-      max-width: 570px;
+    @media screen and (min-width: 1200px) {
+      flex-direction: row;
 
-      .input-container {
-        display: flex;
-        flex-wrap: wrap;
-        column-gap: 24px;
+      margin-top: 18px;
 
-        input {
-          box-sizing: border-box;
-          width: 100%;
-          min-width: 270px;
-          min-height: 50px;
-          margin-bottom: 1.5rem;
-
-          padding-left: 20px;
-
-          color: $white;
-          font-size: 14px;
-
-          background-color: transparent;
-          border: 2px solid $grey;
-
-          border-radius: 3px;
-
-          @media screen and (min-width: 1200px) {
-            width: auto;
-          }
-
-          &::placeholder {
-            color: $white;
-            font-weight: 700;
-            font-size: 14px;
-            line-height: 16px;
-            text-transform: capitalize;
-          }
-        }
+      p {
+        margin-top: 0;
       }
+    }
+  }
 
-      button {
-        width: 100%;
-        height: 57px;
-        padding: 20px 30px;
-        color: $white;
-        font-size: 13.3px;
-        font-family: Arial, sans-serif;
-        line-height: 15.29px;
+  .socials {
+    display: flex;
+    column-gap: 24px;
 
-        text-align: center;
-        text-transform: uppercase;
-        background-color: $green;
+    .gmail {
+      display: block;
+      width: 26px;
+      height: 17px;
 
-        border: none;
-        border-radius: 5px;
-      }
+      @include image("Google+.png");
+    }
+
+    .twitter {
+      display: block;
+      width: 22px;
+      height: 19px;
+
+      @include image("Twitter.png");
+    }
+  }
+
+  hr {
+    position: absolute;
+    top: -8px;
+    right: -20px;
+    left: -20px;
+    margin: 0;
+
+    @media screen and (min-width: 1200px) {
+      right: -120px;
+      left: -120px;
     }
   }
 }
@@ -635,138 +654,6 @@ header {
   background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
 }
 
-footer {
-  display: grid;
-  grid-template-areas:
-    "about"
-    "support"
-    "contacts"
-    "subscribe"
-    "footer";
-
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(5, max-content);
-  padding-right: 20px;
-
-  padding-left: 20px;
-
-  row-gap: calc(30px - 0.83em);
-
-  @media screen and (min-width: 1200px) {
-    grid-template-areas:
-      "about support contacts subscribe"
-      "footer footer footer footer";
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, max-content);
-    padding-right: 120px;
-    padding-left: 120px;
-  }
-
-  .rem-3-padding {
-    @media screen and (min-width: 1200px) {
-      padding-top: 3rem;
-      padding-bottom: 3rem;
-    }
-  }
-
-  .rem-3-p-t {
-    padding-top: 3rem;
-  }
-
-  .rem-3-p-b {
-    padding-bottom: 3rem;
-  }
-
-  h2 {
-    font-size: 18px;
-    line-height: 27px;
-  }
-
-  p {
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-
-  .about {
-    grid-area: about;
-  }
-
-  .support {
-    grid-area: support;
-  }
-
-  .contacts {
-    grid-area: contacts;
-  }
-
-  .subscribe {
-    grid-area: subscribe;
-  }
-
-  .footer {
-    position: relative;
-    display: flex;
-
-    flex-direction: column;
-    grid-area: footer;
-    margin-top: 34px;
-    margin-bottom: 1em;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-
-    line-height: 24px;
-    column-gap: 16px;
-
-    p {
-      margin-top: 16px;
-    }
-
-    @media screen and (min-width: 1200px) {
-      flex-direction: row;
-
-      margin-top: 18px;
-
-      p {
-        margin-top: 0;
-      }
-    }
-  }
-
-  .socials {
-    display: flex;
-    column-gap: 24px;
-
-    .gmail {
-      display: block;
-      width: 26px;
-      height: 17px;
-
-      @include image("Google+.png");
-    }
-
-    .twitter {
-      display: block;
-      width: 22px;
-      height: 19px;
-
-      @include image("Twitter.png");
-    }
-  }
-
-  hr {
-    position: absolute;
-    top: -8px;
-    right: -20px;
-    left: -20px;
-    margin: 0;
-
-    @media screen and (min-width: 1200px) {
-      right: -120px;
-      left: -120px;
-    }
-  }
-}
-
 .artist-page-description {
   @include image("Morten Harket.png");
   margin: 0;
@@ -1012,6 +899,113 @@ footer {
           line-height: 24px;
           text-align: center;
         }
+      }
+    }
+  }
+}
+
+.page-description {
+  @include image("banner.png");
+
+  display: flex;
+  justify-content: center;
+
+  .content {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 200px;
+    padding-top: 248px;
+    padding-right: 20px;
+
+    padding-left: 20px;
+    text-align: center;
+
+    @media screen and (min-width: 1200px) {
+      margin-top: 200px;
+      padding: 0;
+    }
+
+    h1 {
+      color: $white;
+      font-weight: 700;
+
+      @include margin-v(0);
+    }
+
+    h2 {
+      color: $white;
+      font-weight: 700;
+
+      @include margin-v(0);
+    }
+
+    p {
+      margin-top: 16px;
+      margin-bottom: 16px;
+      color: $white;
+
+      @media screen and (min-width: 1200px) {
+        margin-top: 31px;
+        margin-bottom: 17px;
+      }
+    }
+
+    form {
+      max-width: 570px;
+
+      .input-container {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 24px;
+
+        input {
+          box-sizing: border-box;
+          width: 100%;
+          min-width: 270px;
+          min-height: 50px;
+          margin-bottom: 1.5rem;
+
+          padding-left: 20px;
+
+          color: $white;
+          font-size: 14px;
+
+          background-color: transparent;
+          border: 2px solid $grey;
+
+          border-radius: 3px;
+
+          @media screen and (min-width: 1200px) {
+            width: auto;
+          }
+
+          &::placeholder {
+            color: $white;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 16px;
+            text-transform: capitalize;
+          }
+        }
+      }
+
+      button {
+        width: 100%;
+        height: 57px;
+        padding: 20px 30px;
+        color: $white;
+        font-size: 13.3px;
+        font-family: Arial, sans-serif;
+        line-height: 15.29px;
+
+        text-align: center;
+        text-transform: uppercase;
+        background-color: $green;
+
+        border: none;
+        border-radius: 5px;
       }
     }
   }
