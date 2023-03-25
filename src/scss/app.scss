@@ -656,7 +656,17 @@ footer {
   }
 
   .rem-3-padding {
+    @media screen and (min-width: 1200px) {
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+    }
+  }
+
+  .rem-3-p-t {
     padding-top: 3rem;
+  }
+
+  .rem-3-p-b {
     padding-bottom: 3rem;
   }
 

@@ -537,8 +537,16 @@ footer {
     padding-right: 120px;
   }
 }
-footer .rem-3-padding {
+@media screen and (min-width: 1200px) {
+  footer .rem-3-padding {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+footer .rem-3-p-t {
   padding-top: 3rem;
+}
+footer .rem-3-p-b {
   padding-bottom: 3rem;
 }
 footer h2 {
