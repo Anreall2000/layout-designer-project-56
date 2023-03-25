@@ -173,7 +173,7 @@ header .header input::placeholder {
 
 footer {
   display: grid;
-  grid-template-areas: "about" "support" "contacts" "subscribe" "footer";
+  grid-template: "about" "support" "contacts" "subscribe" "footer";
   grid-template-columns: 1fr;
   grid-template-rows: repeat(5, max-content);
   padding-right: 20px;
@@ -182,7 +182,7 @@ footer {
 }
 @media screen and (min-width: 1200px) {
   footer {
-    grid-template-areas: "about support contacts subscribe" "footer footer footer footer";
+    grid-template: "about support contacts subscribe" "footer footer footer footer";
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, max-content);
     padding-right: 120px;
