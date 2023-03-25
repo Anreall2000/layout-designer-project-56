@@ -267,12 +267,11 @@ header .header input::placeholder {
   border: none;
 }
 
-main {
-  display: flex;
-  justify-content: space-around;
-}
-
 .page-pricing {
+  display: flex;
+  justify-content: center;
+}
+.page-pricing .content {
   display: flex;
   flex-direction: column;
   padding-top: 100px;
@@ -280,70 +279,70 @@ main {
   padding-right: 20px;
 }
 @media screen and (min-width: 1200px) {
-  .page-pricing {
+  .page-pricing .content {
     width: 1200px;
     padding-left: 0px;
     padding-right: 0px;
   }
 }
-.page-pricing h2 {
+.page-pricing .content h2 {
   text-align: center;
 }
-.page-pricing p {
+.page-pricing .content p {
   text-align: center;
 }
-.page-pricing .page-pricing-footer {
+.page-pricing .content .page-pricing-footer {
   color: #FFFFFF;
   margin-top: 40px;
 }
-.page-pricing .pricings {
+.page-pricing .content .pricings {
   display: flex;
   column-gap: 46.8px;
   row-gap: 54px;
   flex-direction: column;
 }
 @media screen and (min-width: 1200px) {
-  .page-pricing .pricings {
+  .page-pricing .content .pricings {
     flex-direction: row;
   }
 }
-.page-pricing .pricings .pricing-item {
+.page-pricing .content .pricings .pricing-item {
   display: flex;
   flex-direction: column;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   border-radius: 1rem;
 }
-.page-pricing .pricings .pricing-item.bg-sub-1 {
+.page-pricing .content .pricings .pricing-item.bg-sub-1 {
   background-image: url("../images/subscribe_1.png");
   background-position: center;
   background-size: cover;
 }
-.page-pricing .pricings .pricing-item.bg-sub-2 {
+.page-pricing .content .pricings .pricing-item.bg-sub-2 {
   background-image: url("../images/subscribe_2.png");
   background-position: center;
   background-size: cover;
 }
-.page-pricing .pricings .pricing-item.bg-sub-3 {
+.page-pricing .content .pricings .pricing-item.bg-sub-3 {
   background-image: url("../images/subscribe_3.png");
   background-position: center;
   background-size: cover;
 }
-.page-pricing .pricings .pricing-item h3 {
+.page-pricing .content .pricings .pricing-item h3 {
   text-align: center;
   font-weight: normal;
 }
-.page-pricing .pricings .pricing-item .pricing-value {
+.page-pricing .content .pricings .pricing-item .pricing-value {
   margin-top: 200px;
 }
-.page-pricing .pricings .pricing-item .pricing-footer {
+.page-pricing .content .pricings .pricing-item .pricing-footer {
   margin-top: 64px;
   margin-bottom: 64px;
   font-size: 12.8px;
   line-height: 19.2px;
   color: #FFFFFF;
 }
-.page-pricing .pricings .pricing-item a {
+.page-pricing .content .pricings .pricing-item a {
   display: block;
   padding-left: 20px;
   padding-top: 21px;
