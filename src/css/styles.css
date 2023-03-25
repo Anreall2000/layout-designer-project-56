@@ -268,13 +268,13 @@ header .header input::placeholder {
   display: flex;
   flex-direction: column;
   padding-top: 100px;
-  margin-left: 20px;
-  margin-right: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 @media screen and (min-width: 1200px) {
   .page-pricing {
-    margin-left: 50px;
-    margin-right: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 }
 .page-pricing h2 {
