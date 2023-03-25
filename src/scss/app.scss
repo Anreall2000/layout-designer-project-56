@@ -343,17 +343,17 @@ header {
   display: flex;
   flex-direction: column;
 
-  width: 1200px;
+  max-width: 1200px;
 
   padding-top: 100px;
 
   padding-left: 20px;
   padding-right: 20px;
 
-  @media screen and (min-width: 1200px) {
-    padding-left: 50px;
-    padding-right: 50px;
-  }
+  // @media screen and (min-width: 1200px) {
+  //   padding-left: 50px;
+  //   padding-right: 50px;
+  // }
 
   h2 {
     text-align: center;
