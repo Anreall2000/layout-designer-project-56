@@ -600,7 +600,7 @@ footer hr {
   position: absolute;
   left: -20px;
   right: -20px;
-  top: 3rem;
+  top: 0;
 }
 @media screen and (min-width: 1200px) {
   footer hr {
