@@ -26,8 +26,6 @@ body {
   line-height: 1.5;
   color: $grey;
   background: $dark;
-
-  margin: 0;
 }
 
 @mixin header {
@@ -340,20 +338,23 @@ header {
 
 
 .page-pricing {
+
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
 
+  .content {
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
 
+    padding-left: 20px;
+    padding-right: 20px;
 
-  padding-top: 100px;
-
-  padding-left: 20px;
-  padding-right: 20px;
-
-  @media screen and (min-width: 1200px) {
-    max-width: 1200px;
-    padding-left: 0px;
-    padding-right: 0px;
+    @media screen and (min-width: 1200px) {
+      max-width: 1200px;
+      padding-left: 0px;
+      padding-right: 0px;
+    }
   }
 
   h2 {

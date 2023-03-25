@@ -8,7 +8,6 @@ body {
   line-height: 1.5;
   color: #cacaca;
   background: #08020d;
-  margin: 0;
 }
 
 .c-white {
@@ -269,13 +268,17 @@ header .header input::placeholder {
 
 .page-pricing {
   display: flex;
+  justify-content: space-around;
+}
+.page-pricing .content {
+  display: flex;
   flex-direction: column;
   padding-top: 100px;
   padding-left: 20px;
   padding-right: 20px;
 }
 @media screen and (min-width: 1200px) {
-  .page-pricing {
+  .page-pricing .content {
     max-width: 1200px;
     padding-left: 0px;
     padding-right: 0px;
