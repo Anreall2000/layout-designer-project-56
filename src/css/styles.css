@@ -270,15 +270,15 @@ header .header input::placeholder {
 .page-pricing {
   display: flex;
   flex-direction: column;
-  width: 1200px;
   padding-top: 100px;
   padding-left: 20px;
   padding-right: 20px;
 }
 @media screen and (min-width: 1200px) {
   .page-pricing {
-    padding-left: 50px;
-    padding-right: 50px;
+    max-width: 1200px;
+    padding-left: 0px;
+    padding-right: 0px;
   }
 }
 .page-pricing h2 {
