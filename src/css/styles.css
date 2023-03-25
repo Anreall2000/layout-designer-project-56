@@ -267,6 +267,10 @@ header .header input::placeholder {
   border: none;
 }
 
+main {
+  display: flex;
+}
+
 .page-pricing {
   display: flex;
   flex-direction: column;
