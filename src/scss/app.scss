@@ -183,7 +183,6 @@ header {
 
       flex-flow: column wrap;
       align-items: flex-start;
-
       column-gap: 24px;
 
       @media screen and (min-width: 1200px) {
@@ -194,7 +193,6 @@ header {
       .header-option {
         margin-top: 0;
         margin-bottom: 0;
-
         text-align: center;
       }
     }
@@ -305,7 +303,6 @@ footer {
     margin-bottom: 1em;
     padding-top: 2rem;
     padding-bottom: 2rem;
-
     line-height: 24px;
     column-gap: 16px;
 
@@ -460,14 +457,12 @@ footer {
         height: 66px;
         padding-top: 21px;
         padding-bottom: 21px;
-
         color: $white;
         font-size: 16px;
         line-height: 24px;
         text-align: center;
         text-transform: uppercase;
         text-decoration: none;
-
         background-color: transparent;
         border: 1px solid $grey;
 
@@ -523,7 +518,6 @@ footer {
     display: flex;
 
     flex-direction: column;
-
     column-gap: 50px;
     row-gap: 50px;
 
@@ -567,13 +561,11 @@ footer {
     width: 135px;
     height: 53px;
     padding: 16px 30px;
-
     color: $white;
     font-size: 12px;
     text-align: center;
     text-transform: uppercase;
     text-decoration: none;
-
     background-color: transparent;
     border: 1px solid $grey;
 
@@ -636,7 +628,6 @@ footer {
     a {
       display: inline-block;
       padding: 16px 40px;
-
       color: $white;
       font-size: 12.8px;
       text-decoration: none;
@@ -735,14 +726,14 @@ footer {
 
   .tracks {
     display: grid;
-    grid-template-columns: 1fr;
     grid-template-rows: repeat(6, max-content);
+    grid-template-columns: 1fr;
     column-gap: 50px;
     row-gap: 25px;
 
     @media screen and (min-width: 1200px) {
-      grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(3, max-content);
+      grid-template-columns: repeat(2, 1fr);
     }
 
     .popular-track {
@@ -798,14 +789,14 @@ footer {
 
   .discography-list {
     display: grid;
-    grid-template-columns: repeat(2, 137px);
     grid-template-rows: repeat(3, minmax(0, max-content));
+    grid-template-columns: repeat(2, 137px);
     column-gap: 50px;
     row-gap: 25px;
 
     @media screen and (min-width: 1200px) {
-      grid-template-columns: repeat(4, 250px);
       grid-template-rows: repeat(2, minmax(0, max-content));
+      grid-template-columns: repeat(4, 250px);
     }
 
     .discography-item {
@@ -856,14 +847,14 @@ footer {
 
   .similar-list {
     display: grid;
-    grid-template-columns: repeat(2, 137px);
     grid-template-rows: repeat(3, minmax(0, max-content));
+    grid-template-columns: repeat(2, 137px);
     column-gap: 50px;
     row-gap: 25px;
 
     @media screen and (min-width: 1200px) {
-      grid-template-columns: repeat(4, 250px);
       grid-template-rows: repeat(2, minmax(0, max-content));
+      grid-template-columns: repeat(4, 250px);
     }
 
     .similar-item {
@@ -964,10 +955,8 @@ footer {
           margin-bottom: 1.5rem;
 
           padding-left: 20px;
-
           color: $white;
           font-size: 14px;
-
           background-color: transparent;
           border: 2px solid $grey;
 
