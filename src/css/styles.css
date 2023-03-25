@@ -464,7 +464,6 @@ header .header input::placeholder {
   flex-direction: column;
   align-items: center;
   padding-top: 100px;
-  padding-bottom: 100px;
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -475,6 +474,7 @@ header .header input::placeholder {
 }
 .page-app h2 {
   margin-bottom: 48px;
+  margin-top: 0;
   color: #FFFFFF;
 }
 .page-app .app-content {
