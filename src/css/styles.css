@@ -487,6 +487,10 @@ header .header input::placeholder {
     flex-direction: row;
   }
 }
+.page-app img {
+  width: 333px;
+  height: 278px;
+}
 .page-app .app-body {
   row-gap: 16px;
   order: 1;
