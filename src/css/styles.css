@@ -309,6 +309,7 @@ header .header input::placeholder {
   }
 }
 .page-pricing .pricings .pricing-item {
+  flex: 1 1 0px;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   border-radius: 1rem;

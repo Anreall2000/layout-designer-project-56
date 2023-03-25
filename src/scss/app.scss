@@ -388,7 +388,7 @@ header {
     }
 
     .pricing-item {
-
+      flex: 1 1 0px;
       &.bg-sub-1{
         @include non-center-image("subscribe_1.png");
       }
