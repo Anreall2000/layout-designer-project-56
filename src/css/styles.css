@@ -502,9 +502,10 @@ header .header input::placeholder {
   }
 }
 .page-app .app-body p {
-  padding-bottom: 16px;
+  margin-bottom: 16px;
 }
 .page-app .app-body a {
+  display: inline-block;
   border-radius: 32px;
   font-size: 12.8px;
   padding: 16px 40px;
