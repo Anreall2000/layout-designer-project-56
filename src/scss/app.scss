@@ -699,8 +699,12 @@ footer {
     grid-area: footer;
     display: flex;
     column-gap: 16px;
+    margin-top: 1em;
+    margin-bottom: 1em;
     padding-top: 2rem;
     padding-bottom: 2rem;
+
+    line-height: 24px;
 
     flex-direction: column;
     @media screen and (min-width: 1200px) {
