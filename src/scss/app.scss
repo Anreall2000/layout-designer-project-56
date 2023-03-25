@@ -353,7 +353,7 @@ header {
 
   h2 {
     text-align: center;
-    padding-bottom: 45px;
+    margin-bottom: 45px;
   }
 
   p {
@@ -379,8 +379,6 @@ header {
     }
 
     .pricing-item {
-      display: flex;
-      flex-direction: column;
 
       &.bg-sub-1{
         @include image("subscribe_1.png");
@@ -437,6 +435,7 @@ header {
         border: 2px solid $grey;
         box-sizing: border-box;
         height: 66px;
+        width: 318.66px;
 
         color: $white;
 

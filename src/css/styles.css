@@ -281,7 +281,7 @@ header .header input::placeholder {
 }
 .page-pricing h2 {
   text-align: center;
-  padding-bottom: 45px;
+  margin-bottom: 45px;
 }
 .page-pricing p {
   text-align: center;
@@ -303,8 +303,6 @@ header .header input::placeholder {
   }
 }
 .page-pricing .pricings .pricing-item {
-  display: flex;
-  flex-direction: column;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   border-radius: 1rem;
@@ -358,6 +356,7 @@ header .header input::placeholder {
   border: 2px solid #cacaca;
   box-sizing: border-box;
   height: 66px;
+  width: 318.66px;
   color: #FFFFFF;
   background-color: transparent;
   border-radius: 3px;
